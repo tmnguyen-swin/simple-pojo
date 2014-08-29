@@ -1,7 +1,7 @@
 <jaxws:bindings
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-        wsdlLocation="ePlanWebService.wsdl"
+        wsdlLocation="http://blackwood:8091/ePlanWebService.asmx?WSDL"
         xmlns="http://java.sun.com/xml/ns/jaxws"
         xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
     <enableWrapperStyle>false</enableWrapperStyle>

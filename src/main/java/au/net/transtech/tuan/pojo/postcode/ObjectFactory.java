@@ -34,19 +34,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetPostcodeAndSuburbForAustraliaResponse.GetPostcodeAndSuburbForAustraliaResult }
+     * 
+     */
+    public GetPostcodeAndSuburbForAustraliaResponse.GetPostcodeAndSuburbForAustraliaResult createGetPostcodeAndSuburbForAustraliaResponseGetPostcodeAndSuburbForAustraliaResult() {
+        return new GetPostcodeAndSuburbForAustraliaResponse.GetPostcodeAndSuburbForAustraliaResult();
+    }
+
+    /**
      * Create an instance of {@link GetPostcodeAndSuburbForAustralia }
      * 
      */
     public GetPostcodeAndSuburbForAustralia createGetPostcodeAndSuburbForAustralia() {
         return new GetPostcodeAndSuburbForAustralia();
-    }
-
-    /**
-     * Create an instance of {@link DataSet }
-     * 
-     */
-    public DataSet createDataSet() {
-        return new DataSet();
     }
 
     /**
@@ -58,11 +58,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPostcodeAndSuburbForAustraliaResponse.GetPostcodeAndSuburbForAustraliaResult }
+     * Create an instance of {@link DataSet }
      * 
      */
-    public GetPostcodeAndSuburbForAustraliaResponse.GetPostcodeAndSuburbForAustraliaResult createGetPostcodeAndSuburbForAustraliaResponseGetPostcodeAndSuburbForAustraliaResult() {
-        return new GetPostcodeAndSuburbForAustraliaResponse.GetPostcodeAndSuburbForAustraliaResult();
+    public DataSet createDataSet() {
+        return new DataSet();
     }
 
     /**

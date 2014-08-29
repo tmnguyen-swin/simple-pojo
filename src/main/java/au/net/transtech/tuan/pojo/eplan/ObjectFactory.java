@@ -30,22 +30,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetNextRequiredRestResponse }
-     * 
-     */
-    public GetNextRequiredRestResponse createGetNextRequiredRestResponse() {
-        return new GetNextRequiredRestResponse();
-    }
-
-    /**
-     * Create an instance of {@link EPlanMessageResponse }
-     * 
-     */
-    public EPlanMessageResponse createEPlanMessageResponse() {
-        return new EPlanMessageResponse();
-    }
-
-    /**
      * Create an instance of {@link EPlanMessage }
      * 
      */
@@ -59,6 +43,22 @@ public class ObjectFactory {
      */
     public GetNextRequiredRest createGetNextRequiredRest() {
         return new GetNextRequiredRest();
+    }
+
+    /**
+     * Create an instance of {@link GetNextRequiredRestResponse }
+     * 
+     */
+    public GetNextRequiredRestResponse createGetNextRequiredRestResponse() {
+        return new GetNextRequiredRestResponse();
+    }
+
+    /**
+     * Create an instance of {@link EPlanMessageResponse }
+     * 
+     */
+    public EPlanMessageResponse createEPlanMessageResponse() {
+        return new EPlanMessageResponse();
     }
 
 }
