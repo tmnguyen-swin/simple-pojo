@@ -42,6 +42,8 @@
                                         <extraarg>-p</extraarg>
                                         <extraarg>au.net.transtech.tuan.pojo.eplan</extraarg>
                                         <extraarg>-verbose</extraarg>
+                                        <extraarg>-b</extraarg>
+                                        <extraarg>src/main/resources/eplan/binding.xml</extraarg>
                                     </extraargs>
                                 </wsdlOption>
                                 <wsdlOption>

@@ -30,11 +30,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetNextRequiredRest }
+     * Create an instance of {@link GetNextRequiredRestResponse }
      * 
      */
-    public GetNextRequiredRest createGetNextRequiredRest() {
-        return new GetNextRequiredRest();
+    public GetNextRequiredRestResponse createGetNextRequiredRestResponse() {
+        return new GetNextRequiredRestResponse();
     }
 
     /**
@@ -54,11 +54,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetNextRequiredRestResponse }
+     * Create an instance of {@link GetNextRequiredRest }
      * 
      */
-    public GetNextRequiredRestResponse createGetNextRequiredRestResponse() {
-        return new GetNextRequiredRestResponse();
+    public GetNextRequiredRest createGetNextRequiredRest() {
+        return new GetNextRequiredRest();
     }
 
 }
