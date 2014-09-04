@@ -54,6 +54,7 @@
                                                                     </extraargs>
                                                                 </wsdlOption>
                                 -->
+<!--
                                 <wsdlOption>
                                     <wsdl>src/main/resources/stockquote/stockquote.wsdl</wsdl>
                                     <extraargs>
@@ -64,6 +65,7 @@
                                         <extraarg>src/main/resources/stockquote/binding.xml</extraarg>
                                     </extraargs>
                                 </wsdlOption>
+-->
                                 <wsdlOption>
                                     <wsdl>src/main/resources/abn/abn.wsdl</wsdl>
                                     <extraargs>
