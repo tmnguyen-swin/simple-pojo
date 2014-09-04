@@ -64,6 +64,16 @@
                                         <extraarg>src/main/resources/stockquote/binding.xml</extraarg>
                                     </extraargs>
                                 </wsdlOption>
+                                <wsdlOption>
+                                    <wsdl>src/main/resources/abn/abn.wsdl</wsdl>
+                                    <extraargs>
+                                        <extraarg>-p</extraarg>
+                                        <extraarg>au.net.transtech.tuan.pojo.abn</extraarg>
+                                        <extraarg>-verbose</extraarg>
+                                        <extraarg>-b</extraarg>
+                                        <extraarg>src/main/resources/abn/binding.xml</extraarg>
+                                    </extraargs>
+                                </wsdlOption>
                                 <!--
                                                                 <wsdlOption>
                                                                     <wsdl>src/main/resources/postcode/PostCodeService.wsdl</wsdl>
