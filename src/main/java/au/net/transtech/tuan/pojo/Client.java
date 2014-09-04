@@ -9,14 +9,13 @@ import au.net.transtech.tuan.pojo.postcode.GetPostcodeAndSuburbForAustraliaRespo
 import au.net.transtech.tuan.pojo.postcode.PostcodeService;
 import au.net.transtech.tuan.pojo.postcode.PostcodeServiceSoap;
 import au.net.transtech.tuan.pojo.stockquote.GetQuote;
+import au.net.transtech.tuan.pojo.stockquote.GetQuoteResponse;
 import au.net.transtech.tuan.pojo.stockquote.StockQuote;
 import au.net.transtech.tuan.pojo.stockquote.StockQuoteSoap;
 import org.apache.axis2.AxisFault;
-import org.reficio.ws.builder.SoapBuilder;
-import org.reficio.ws.builder.SoapOperation;
-import org.reficio.ws.builder.core.Wsdl;
 import org.reficio.ws.client.core.SoapClient;
 
+import javax.xml.ws.BindingProvider;
 import java.rmi.RemoteException;
 
 /**
@@ -26,11 +25,11 @@ public class Client {
 
     public Client()
     {
-//        invokeStockQuote();
+        invokeStockQuote();
 //        invokePostCode();
 //        invokeEPlan();
 //        invokeMyWebService();
-        invokeMyWebService2();
+//        invokeMyWebService2();
     }
 
     public static void main(String[] args)
@@ -42,9 +41,13 @@ public class Client {
     {
         StockQuote stockQuoteService = new StockQuote();
         StockQuoteSoap soapPort = stockQuoteService.getStockQuoteSoap();
+
+//        Client client = ClientProxy.getClient(soapPort);
+//        client.getRequestContext().put(Message.ENDPOINT_ADDRESS, "http://some-valid-endpoint") ;
         GetQuote request = new GetQuote();
-        String response = soapPort.getQuote("GOOG");
-        System.out.println(response);
+        request.setSymbol("GOOG");
+        GetQuoteResponse response = soapPort.getQuote(request);
+        System.out.println(response.getGetQuoteResult());
     }
 
     public void invokePostCode()

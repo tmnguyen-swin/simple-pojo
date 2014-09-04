@@ -50,19 +50,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPostcodeAndSuburbForAustraliaResponse }
-     * 
-     */
-    public GetPostcodeAndSuburbForAustraliaResponse createGetPostcodeAndSuburbForAustraliaResponse() {
-        return new GetPostcodeAndSuburbForAustraliaResponse();
-    }
-
-    /**
      * Create an instance of {@link DataSet }
      * 
      */
     public DataSet createDataSet() {
         return new DataSet();
+    }
+
+    /**
+     * Create an instance of {@link GetPostcodeAndSuburbForAustraliaResponse }
+     * 
+     */
+    public GetPostcodeAndSuburbForAustraliaResponse createGetPostcodeAndSuburbForAustraliaResponse() {
+        return new GetPostcodeAndSuburbForAustraliaResponse();
     }
 
     /**
