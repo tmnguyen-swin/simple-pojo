@@ -45,7 +45,7 @@ public class Client {
 //        Client client = ClientProxy.getClient(soapPort);
 //        client.getRequestContext().put(Message.ENDPOINT_ADDRESS, "http://some-valid-endpoint") ;
         GetQuote request = new GetQuote();
-        request.setSymbol("GOOG");
+        request.setSymbol("AAPL");
         GetQuoteResponse response = soapPort.getQuote(request);
         System.out.println(response.getGetQuoteResult());
     }

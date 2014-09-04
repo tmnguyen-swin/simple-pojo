@@ -18,7 +18,6 @@ import javax.xml.ws.ResponseWrapper;
  */
  
 @WebService(targetNamespace = "http://www.webserviceX.NET/", name = "StockQuoteSoap")
-@XmlSeeAlso({ObjectFactory.class})
 @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
 public interface StockQuoteSoap {
 

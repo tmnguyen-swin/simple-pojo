@@ -48,23 +48,6 @@ public class StockQuote extends Service {
     }
 
     /**
-     * @return returns StockQuoteHttpPost
-     */
-    @WebEndpoint(name = "StockQuoteHttpPost")
-    public StockQuoteHttpPost getStockQuoteHttpPost() {
-        return super.getPort(StockQuoteHttpPost, StockQuoteHttpPost.class);
-    }
-
-    /**
-     * @param features A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
-     * @return returns StockQuoteHttpPost
-     */
-    @WebEndpoint(name = "StockQuoteHttpPost")
-    public StockQuoteHttpPost getStockQuoteHttpPost(WebServiceFeature... features) {
-        return super.getPort(StockQuoteHttpPost, StockQuoteHttpPost.class, features);
-    }
-
-    /**
      * @return returns StockQuoteSoap
      */
     @WebEndpoint(name = "StockQuoteSoap")
@@ -99,23 +82,6 @@ public class StockQuote extends Service {
     @WebEndpoint(name = "StockQuoteSoap12")
     public StockQuoteSoap getStockQuoteSoap12(WebServiceFeature... features) {
         return super.getPort(StockQuoteSoap12, StockQuoteSoap.class, features);
-    }
-
-    /**
-     * @return returns StockQuoteHttpGet
-     */
-    @WebEndpoint(name = "StockQuoteHttpGet")
-    public StockQuoteHttpGet getStockQuoteHttpGet() {
-        return super.getPort(StockQuoteHttpGet, StockQuoteHttpGet.class);
-    }
-
-    /**
-     * @param features A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
-     * @return returns StockQuoteHttpGet
-     */
-    @WebEndpoint(name = "StockQuoteHttpGet")
-    public StockQuoteHttpGet getStockQuoteHttpGet(WebServiceFeature... features) {
-        return super.getPort(StockQuoteHttpGet, StockQuoteHttpGet.class, features);
     }
 
 }
